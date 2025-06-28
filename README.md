@@ -29,11 +29,34 @@ accordance with that license.
 
 **Software:**
 
-* Programming language: MATLAB (or a suitable alternative)
+* MATLAB R2017b or later. The repository has also been tested with GNU Octave 8.4,
+  which provides a free, open source alternative.
 * Relevant functions (examples):
     * `bouguer_anomaly.m`: Calculates the Bouguer anomaly.
     * `orthometric_height.m`: Computes orthometric heights.
-    * `vprism.m` (if applicable): Calculates the gravitational potential of a rectangular prism.
+* `vprism.m` (if applicable): Calculates the gravitational potential of a rectangular prism.
+
+### Running the example
+
+1. Start **MATLAB** or **GNU Octave** and change the current directory to the
+   root of this repository.
+2. Load the sample terrain data
+   ```matlab
+   dgm = load('dgm.mat');
+   ```
+   (this step is optional because the script loads the file automatically).
+3. Run the main script
+   ```matlab
+   Gravity_field_topographic
+   ```
+4. Four figures should appear:
+   * *Modeling of topographic masses with a Bouguer plate* (3‑D mesh)
+   * *Topography wrt to Bouguer plate* (profile plot)
+   * *Topography wrt to Rectangualr Prism*
+   * *comparision-Topography wrt to Bouguer plate and Rectangualr Prism*
+5. When finished, check the workspace for `gp_top_Bouguer`,
+   `gp_top_rectangular_Prism`, `Hp`, and `Hp2`.  Their presence indicates the
+   computation ran successfully.
 
 **Usage**
 
