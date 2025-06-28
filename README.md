@@ -24,6 +24,13 @@ The `data` folder contains input files used for computations:
 * `data/gravity_profile.dat` (or similar): Gravity measurements along the profile.
 * `data/zugspitze_params.dat` (or similar): Parameters for the Zugspitze example (geopotential number, gravity value).
 
+### dgm.mat
+
+`dgm.mat` is a small sample digital terrain model used by the MATLAB examples in
+this repository. It was created by the authors for demonstration purposes and is
+distributed under the repository's MIT License. You may reuse this file in
+accordance with that license.
+
 **Software:**
 
 * Programming language: MATLAB (or a suitable alternative)
