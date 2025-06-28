@@ -20,6 +20,13 @@ This repository investigates the contribution of topography to gravity field qua
 
 Input data for the examples is provided in the file `dgm.mat` located in the repository root.  If you want to experiment with your own data, create a `data` directory and place your files there.
 
+### dgm.mat
+
+`dgm.mat` is a small sample digital terrain model used by the MATLAB examples in
+this repository. It was created by the authors for demonstration purposes and is
+distributed under the repository's MIT License. You may reuse this file in
+accordance with that license.
+
 **Software:**
 
 * Programming language: MATLAB (or a suitable alternative)
