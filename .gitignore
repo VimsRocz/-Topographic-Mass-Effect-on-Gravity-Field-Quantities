@@ -1,0 +1,17 @@
+# Ignore MATLAB backup files and editor/OS artifacts
+*~
+.DS_Store
+Thumbs.db
+
+# Ignore generated data and results
+/data/
+/results/
+
+# Ignore large output files
+*.mat
+*.dat
+
+# Ignore common IDE folders
+.vscode/
+.idea/
+
