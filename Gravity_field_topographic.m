@@ -81,7 +81,7 @@ end
  plot(gp_top_rectangular_Prism);
  xlabel('Distance of the topography');
 ylabel('Altitude of the topography');
-title('Topography wrt to Rectangualr Prism');
+title('Topography wrt to Rectangular Prism');
 
  figure();
  plot(Line_Y,gp_top_rectangular_Prism);
@@ -90,7 +90,7 @@ title('Topography wrt to Rectangualr Prism');
  hold off;
 xlabel('Distance of the topography');
 ylabel('Altitude of the topography');
-title('comparision-Topography wrt to Bouguer plate and Rectangualr Prism');
+title('comparison-Topography wrt to Bouguer plate and Rectangular Prism');
 
  
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

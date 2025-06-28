@@ -1,6 +1,6 @@
-# -Topographic-Mass-Effect-on-Gravity-Field-Quantities
+# Topographic Mass Effect on Gravity Field Quantities
 This project investigates the contribution of topography to gravity measurements and how it affects various derived quantities. It explores methods for modeling the topography and computing its gravitational influence.
-## Respiratory: Topographic Mass Effect on Gravity Field Quantities
+## Repository: Topographic Mass Effect on Gravity Field Quantities
 
 This repository investigates the contribution of topography to gravity field quantities and its impact on derived measurements. It explores methods for modeling topography and computing its gravitational influence.
 
@@ -18,11 +18,7 @@ This repository investigates the contribution of topography to gravity field qua
 
 **Data:**
 
-The `data` folder contains input files used for computations:
-
-* `data/dtm.dat` (or similar): Digital Terrain Model (DTM) for a chosen profile.
-* `data/gravity_profile.dat` (or similar): Gravity measurements along the profile.
-* `data/zugspitze_params.dat` (or similar): Parameters for the Zugspitze example (geopotential number, gravity value).
+Input data for the examples is provided in the file `dgm.mat` located in the repository root.  If you want to experiment with your own data, create a `data` directory and place your files there.
 
 **Software:**
 
@@ -32,13 +28,19 @@ The `data` folder contains input files used for computations:
     * `orthometric_height.m`: Computes orthometric heights.
     * `vprism.m` (if applicable): Calculates the gravitational potential of a rectangular prism.
 
+**Usage**
+
+Run the main script in MATLAB or Octave:
+
+```matlab
+Gravity_field_topographic
+```
+
+The script loads `dgm.mat`, performs the computations and displays a few plots. Create a `results` directory if you would like to save outputs.
+
 **Results:**
 
-The `results` folder stores the generated outputs:
-
-* `results/tables`: Tables summarizing calculated values.
-* `results/graphs`: Visualizations of relationships between quantities (graphs).
-* `results/reports`: Detailed analysis and discussions in reports.
+You can create a `results` directory to store any tables, figures or reports produced by the scripts.
 
 **Formulae:**
 
@@ -56,12 +58,10 @@ We welcome contributions to this project. If you'd like to contribute, feel free
 
 **License**
 
-[Consider adding a license file (e.g., LICENSE.md) specifying the license used. Choose a license that suits your project, such as MIT or Apache 2.0.]
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 **Authors:**
 
-Vims 
+Vims
 
-code/: Folder containing scripts for calculations (e.g., Bouguer_anomaly.m, orthometric_height.m)
-results/: Folder containing generated tables, graphs, and analysis reports.
-doc/ (Optional): Folder containing additional documentation (e.g., explanations of specific equations).
+Scripts such as `Gravity_field_topographic.m` and `vprism.m` are stored in the repository root.
