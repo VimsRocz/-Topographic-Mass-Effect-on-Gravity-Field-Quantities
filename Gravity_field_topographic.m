@@ -70,7 +70,7 @@ SurfaceY4= repmat(surface_y.' + 25,1,numel(surface_y(1,:)));
 
 for k=1:numel(Line_Z(1,:))
     G=SurfaceY3-Line_Y(1,k);
-    gp_top_rectangular_Prism(1,k) = sum(sum(v1prism(SurfaceX1-Line_X(1,21),SurfaceX2-Line_X(1,21),SurfaceY3-Line_Y(1,k),SurfaceY4-Line_Y(1,k),-Line_Z(k,21),surface_z-Line_Z(k,21))));
+    gp_top_rectangular_Prism(1,k) = sum(sum(vprism(SurfaceX1-Line_X(1,21),SurfaceX2-Line_X(1,21),SurfaceY3-Line_Y(1,k),SurfaceY4-Line_Y(1,k),-Line_Z(k,21),surface_z-Line_Z(k,21))));
     gp_top_rectangular_Prism(1,k) =gp_top_rectangular_Prism(1,k)*rho*10^(-3);
 end
 
