@@ -3,13 +3,13 @@
 .DS_Store
 Thumbs.db
 
-# Ignore generated data and results
-/data/
+# Ignore generated results (but keep sample data)
 /results/
 
-# Ignore large output files
-*.mat
+# Ignore large output files (but keep dgm.mat sample data)
 *.dat
+/data/*.mat
+!dgm.mat
 
 # Ignore common IDE folders
 .vscode/
